@@ -22,6 +22,13 @@ gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.5'
 gem 'devise', '~> 4.5'
+# customizable and sophisticated paginator for Ruby webapps
+gem 'kaminari', '~> 1.1', '>= 1.1.1'
+# Translations for the kaminari gem
+gem 'kaminari-i18n'
+# Gem - Bootstrap 4 styling for Kaminari gem
+gem 'bootstrap4-kaminari-views'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use ActiveModel has_secure_password
