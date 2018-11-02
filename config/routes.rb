@@ -1,14 +1,12 @@
 Rails.application.routes.draw do
 
-  devise_scope :user do
-    root to: "users/sessions#new"
-  end
+  root to: "products#index"
 
   devise_for :users, controllers: {
     sessions: 'users/sessions',
     passwords: 'users/passwords'
   }
-
+  # devise_for :users
   resources :products
 
 end
