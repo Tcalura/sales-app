@@ -15,7 +15,7 @@
         <td><%= product.description %></td>
         <td><%= product.unit_price %></td>
         <td><%= product.quantity %></td>
-        <td><%= link_to 'Add to cart', "#" %></td>
+        <td><%= link_to 'Add to cart', order_items_path(id: product.id), method: :post %></td>
       </tr>
     <% end %>
   </tbody>
