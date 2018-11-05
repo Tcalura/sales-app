@@ -1,24 +1,27 @@
-# README
+### Informações sobre o projeto
+> Foi desenvolvido na versão do Ruby 2.5.1 e Rails 5.2.1
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Para executar o projeto 
+> No terminal dentro da pasta do projeto chamada sales-app execute cada linha de comando separadamente:
+ 
+    rails db:drop db:create:all db:migrate db:seed
+    rails server
 
-Things you may want to cover:
+> A aplicação ficara disponível no navegador no endereço 
 
-* Ruby version
+    http://localhost:3000/
 
-* System dependencies
 
-* Configuration
+### Sobre a aplicação 
+> No canto superior direito tem um link para o login que deve ser feito com os seguintes dados: 
 
-* Database creation
+>email: joao@email.com
+>senha: 123456
 
-* Database initialization
+>Após o login o usuário é direcionado para a tela de produtos onde ele pode adicionar cada produto no carrinho pelo botão "add to cart"
 
-* How to run the test suite
+>OBS: É necessário dar um refresh na tela para refletir no carrinho os itens adicionados. 
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
-
-* ...
+### Observações
+> Gostaria de destacar que não foi possível implementar a feature com meio de pagamento Stripe, fiz uma leitura da documentação, mas não foi algo tão cômodo de tentar se implementar. 
